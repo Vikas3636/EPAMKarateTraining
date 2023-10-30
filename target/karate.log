@@ -1,0 +1,2811 @@
+22:47:59.870 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:48:00.718 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:48:00.753 [main] WARN  com.intuit.karate - type was null, defaulting to 'chrome'
+22:48:00.760 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+22:48:00.761 [chrome_1697390280759] DEBUG c.i.k.driver.chrome_1697390280759 - command: [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1697390280759, --disable-popup-blocking], working dir: target\chrome_1697390280759
+22:48:00.763 [chrome_1697390280759] ERROR com.intuit.karate.shell.Command - command error: [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1697390280759, --disable-popup-blocking] - Cannot run program "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" (in directory "target\chrome_1697390280759"): CreateProcess error=2, The system cannot find the file specified
+22:48:06.074 [main] ERROR com.intuit.karate - driver config / start failed: start failed, options: {type=chrome, target=null}
+com.intuit.karate.KarateException: start failed
+	at com.intuit.karate.driver.DriverOptions.startProcess(DriverOptions.java:268)
+	at com.intuit.karate.driver.DriverOptions.startProcess(DriverOptions.java:243)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:64)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:291)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:857)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:400)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:280)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:462)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:396)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:164)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:226)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:516)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+Caused by: java.io.IOException: Cannot run program "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" (in directory "target\chrome_1697390280759"): CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.intuit.karate.shell.Command.run(Command.java:348)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:453)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:140)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 1 common frames omitted
+22:48:06.076 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:3
+Given driver 'https://google.com'
+driver config / start failed: start failed, options: {type=chrome, target=null}
+src/test/java/examples/users/NPS.feature:3
+22:48:06.474 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+22:49:05.007 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:49:05.010 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697390345010
+22:49:05.841 [main] INFO  com.intuit.karate - karate.env system property was: null 
+22:49:05.868 [main] WARN  com.intuit.karate - type was null, defaulting to 'chrome'
+22:49:05.871 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+22:49:05.872 [chrome_1697390345871] DEBUG c.i.k.driver.chrome_1697390345871 - command: [C:\Program Files\Google\Chrome\Application\chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1697390345871, --disable-popup-blocking], working dir: target\chrome_1697390345871
+22:49:05.878 [main] DEBUG c.i.k.driver.chrome_1697390345871 - poll attempt #0 for port to be ready - localhost:9222
+22:49:06.060 [chrome_1697390345871-out] DEBUG c.i.k.driver.chrome_1697390345871 - 
+22:49:06.060 [chrome_1697390345871-out] DEBUG c.i.k.driver.chrome_1697390345871 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/55b591b9-63f0-4c17-94f1-09fe052d5da9
+22:49:07.078 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:49:07.116 [main] DEBUG com.intuit.karate - response time in milliseconds: 35
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/1635866EBBD53AB370CE42EDD7CA0AC3",
+   "id": "1635866EBBD53AB370CE42EDD7CA0AC3",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/1635866EBBD53AB370CE42EDD7CA0AC3"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/B3D02810197986C40F7B4955D55C715C",
+   "id": "B3D02810197986C40F7B4955D55C715C",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/B3D02810197986C40F7B4955D55C715C"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/CFA58A4156C785F5341C86E6906CAFF7",
+   "id": "CFA58A4156C785F5341C86E6906CAFF7",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/CFA58A4156C785F5341C86E6906CAFF7"
+} ]
+
+
+22:49:07.173 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 754 ms - http://localhost:9222/json
+22:49:07.174 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:49:07.176 [main] DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/1635866EBBD53AB370CE42EDD7CA0AC3",
+   "id": "1635866EBBD53AB370CE42EDD7CA0AC3",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/1635866EBBD53AB370CE42EDD7CA0AC3"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/B3D02810197986C40F7B4955D55C715C",
+   "id": "B3D02810197986C40F7B4955D55C715C",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/B3D02810197986C40F7B4955D55C715C"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/CFA58A4156C785F5341C86E6906CAFF7",
+   "id": "CFA58A4156C785F5341C86E6906CAFF7",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/CFA58A4156C785F5341C86E6906CAFF7"
+} ]
+
+
+22:49:07.181 [main] DEBUG c.i.k.driver.chrome_1697390345871 - root frame id: CFA58A4156C785F5341C86E6906CAFF7
+22:49:07.934 [chrome_1697390345871-out] DEBUG c.i.k.driver.chrome_1697390345871 - [21464:9604:1015/224907.934:ERROR:devtools_http_handler.cc(768)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+22:49:07.947 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+22:49:07.948 [main] ERROR c.i.k.driver.chrome_1697390345871 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+22:49:07.949 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+22:49:07.951 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:3
+Given driver 'https://google.com'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
+src/test/java/examples/users/NPS.feature:3
+22:49:08.881 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+19:06:12.931 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:06:12.938 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697549772937
+19:06:13.013 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 2 - ^NPS$
+19:06:13.899 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:06:13.932 [main] WARN  com.intuit.karate - type was null, defaulting to 'chrome'
+19:06:13.937 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+19:06:13.938 [chrome_1697549773936] DEBUG c.i.k.driver.chrome_1697549773936 - command: [C:\Program Files\Google\Chrome\Application\chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1697549773936, --disable-popup-blocking], working dir: target\chrome_1697549773936
+19:06:13.943 [main] DEBUG c.i.k.driver.chrome_1697549773936 - poll attempt #0 for port to be ready - localhost:9222
+19:06:14.151 [chrome_1697549773936-out] DEBUG c.i.k.driver.chrome_1697549773936 - 
+19:06:14.151 [chrome_1697549773936-out] DEBUG c.i.k.driver.chrome_1697549773936 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/34866aac-7ba8-4b2b-961c-7fb98f5723f9
+19:06:16.072 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:06:16.149 [main] DEBUG com.intuit.karate - response time in milliseconds: 73
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/110863A4FE5FD78F72986CF03F9E61EA",
+   "id": "110863A4FE5FD78F72986CF03F9E61EA",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/110863A4FE5FD78F72986CF03F9E61EA"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/2BE235A631D047AA1C8B866478C3B293",
+   "id": "2BE235A631D047AA1C8B866478C3B293",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/2BE235A631D047AA1C8B866478C3B293"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/A6C36FFD859E48341348E4AA55907916",
+   "id": "A6C36FFD859E48341348E4AA55907916",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/A6C36FFD859E48341348E4AA55907916"
+} ]
+
+
+19:06:16.285 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 1801 ms - http://localhost:9222/json
+19:06:16.287 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:06:16.293 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/110863A4FE5FD78F72986CF03F9E61EA",
+   "id": "110863A4FE5FD78F72986CF03F9E61EA",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/110863A4FE5FD78F72986CF03F9E61EA"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/2BE235A631D047AA1C8B866478C3B293",
+   "id": "2BE235A631D047AA1C8B866478C3B293",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/2BE235A631D047AA1C8B866478C3B293"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/A6C36FFD859E48341348E4AA55907916",
+   "id": "A6C36FFD859E48341348E4AA55907916",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/A6C36FFD859E48341348E4AA55907916"
+} ]
+
+
+19:06:16.302 [main] DEBUG c.i.k.driver.chrome_1697549773936 - root frame id: A6C36FFD859E48341348E4AA55907916
+19:06:18.630 [chrome_1697549773936-out] DEBUG c.i.k.driver.chrome_1697549773936 - [20668:9048:1017/190618.630:ERROR:devtools_http_handler.cc(770)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+19:06:18.656 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+19:06:18.657 [main] ERROR c.i.k.driver.chrome_1697549773936 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+19:06:18.661 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+19:06:18.664 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:3
+Given driver 'https://google.com'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
+src/test/java/examples/users/NPS.feature:3
+19:06:20.346 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+08:39:22.610 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:39:22.615 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1697598562614
+08:39:22.656 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 2 - ^NPS$
+08:39:23.653 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:39:23.689 [main] WARN  com.intuit.karate - type was null, defaulting to 'chrome'
+08:39:23.695 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+08:39:23.696 [chrome_1697598563694] DEBUG c.i.k.driver.chrome_1697598563694 - command: [C:\Program Files\Google\Chrome\Application\chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1697598563694, --disable-popup-blocking], working dir: target\chrome_1697598563694
+08:39:23.703 [main] DEBUG c.i.k.driver.chrome_1697598563694 - poll attempt #0 for port to be ready - localhost:9222
+08:39:23.918 [chrome_1697598563694-out] DEBUG c.i.k.driver.chrome_1697598563694 - 
+08:39:23.918 [chrome_1697598563694-out] DEBUG c.i.k.driver.chrome_1697598563694 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/5cc04c23-362f-4a3c-9b98-dbc2dad01148
+08:39:26.052 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+08:39:26.124 [main] DEBUG com.intuit.karate - response time in milliseconds: 68
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/FC2E6F3D5F7A58D445C5D1A27C8797AE",
+   "id": "FC2E6F3D5F7A58D445C5D1A27C8797AE",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/FC2E6F3D5F7A58D445C5D1A27C8797AE"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/0DC8D333F8AF66C846582BEBE4566233",
+   "id": "0DC8D333F8AF66C846582BEBE4566233",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/0DC8D333F8AF66C846582BEBE4566233"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/B9A8AB9E8DBCBDA780913ECABC9B0C4A",
+   "id": "B9A8AB9E8DBCBDA780913ECABC9B0C4A",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/B9A8AB9E8DBCBDA780913ECABC9B0C4A"
+} ]
+
+
+08:39:26.250 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 1979 ms - http://localhost:9222/json
+08:39:26.252 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+08:39:26.254 [main] DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/FC2E6F3D5F7A58D445C5D1A27C8797AE",
+   "id": "FC2E6F3D5F7A58D445C5D1A27C8797AE",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/FC2E6F3D5F7A58D445C5D1A27C8797AE"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/0DC8D333F8AF66C846582BEBE4566233",
+   "id": "0DC8D333F8AF66C846582BEBE4566233",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/0DC8D333F8AF66C846582BEBE4566233"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/B9A8AB9E8DBCBDA780913ECABC9B0C4A",
+   "id": "B9A8AB9E8DBCBDA780913ECABC9B0C4A",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/B9A8AB9E8DBCBDA780913ECABC9B0C4A"
+} ]
+
+
+08:39:26.261 [main] DEBUG c.i.k.driver.chrome_1697598563694 - root frame id: B9A8AB9E8DBCBDA780913ECABC9B0C4A
+08:39:28.509 [chrome_1697598563694-out] DEBUG c.i.k.driver.chrome_1697598563694 - [18380:12892:1018/083928.509:ERROR:devtools_http_handler.cc(770)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+08:39:28.537 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+08:39:28.538 [main] ERROR c.i.k.driver.chrome_1697598563694 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+08:39:28.542 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+08:39:28.545 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:3
+Given driver 'https://google.com'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, target=null}
+src/test/java/examples/users/NPS.feature:3
+08:39:30.529 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+17:37:12.623 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+17:37:12.964 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:37:12.966 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698581232966
+17:37:13.002 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+17:37:14.046 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:37:14.154 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+17:37:14.155 [chrome_1698581234152] DEBUG c.i.k.driver.chrome_1698581234152 - command: [C:rogram Filesooglehromepplication/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1698581234152, --disable-popup-blocking], working dir: target\chrome_1698581234152
+17:37:14.158 [chrome_1698581234152] ERROR com.intuit.karate.shell.Command - command error: [C:rogram Filesooglehromepplication/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1698581234152, --disable-popup-blocking] - Cannot run program "C:rogram Filesooglehromepplication/chrome.exe" (in directory "target\chrome_1698581234152"): CreateProcess error=2, The system cannot find the file specified
+17:37:19.516 [main] ERROR com.intuit.karate - driver config / start failed: start failed, options: {type=chrome, executable=C:rogram Filesooglehromepplication/chrome.exe, target=null}
+com.intuit.karate.KarateException: start failed
+	at com.intuit.karate.driver.DriverOptions.startProcess(DriverOptions.java:285)
+	at com.intuit.karate.driver.DriverOptions.startProcess(DriverOptions.java:260)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:74)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: java.io.IOException: Cannot run program "C:rogram Filesooglehromepplication/chrome.exe" (in directory "target\chrome_1698581234152"): CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.intuit.karate.shell.Command.run(Command.java:355)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:453)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:140)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 1 common frames omitted
+17:37:19.517 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'https://google.com'
+driver config / start failed: start failed, options: {type=chrome, executable=C:rogram Filesooglehromepplication/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+17:37:20.337 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+17:37:49.765 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+17:37:50.067 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:37:50.068 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698581270068
+17:37:50.098 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+17:37:51.051 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:37:51.141 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+17:37:51.142 [chrome_1698581271140] DEBUG c.i.k.driver.chrome_1698581271140 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1698581271140, --disable-popup-blocking], working dir: target\chrome_1698581271140
+17:37:51.150 [main] DEBUG c.i.k.driver.chrome_1698581271140 - poll attempt #0 for port to be ready - localhost:9222
+17:37:51.388 [chrome_1698581271140-out] DEBUG c.i.k.driver.chrome_1698581271140 - 
+17:37:51.388 [chrome_1698581271140-out] DEBUG c.i.k.driver.chrome_1698581271140 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/5332ccda-3939-4e26-9ab9-d06a9dde51e2
+17:37:53.416 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:37:53.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 63
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/BF3AA31D5CB7211575E1C01644575F0A",
+   "id": "BF3AA31D5CB7211575E1C01644575F0A",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/BF3AA31D5CB7211575E1C01644575F0A"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/22400F778CBD6F955967C14EFBB0C48F",
+   "id": "22400F778CBD6F955967C14EFBB0C48F",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/22400F778CBD6F955967C14EFBB0C48F"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/CBCB7B0423A03321B414AF4D63AA6C2E",
+   "id": "CBCB7B0423A03321B414AF4D63AA6C2E",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/CBCB7B0423A03321B414AF4D63AA6C2E"
+} ]
+
+
+17:37:53.497 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 1824 ms - http://localhost:9222/json
+17:37:53.499 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:37:53.502 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/BF3AA31D5CB7211575E1C01644575F0A",
+   "id": "BF3AA31D5CB7211575E1C01644575F0A",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/BF3AA31D5CB7211575E1C01644575F0A"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/22400F778CBD6F955967C14EFBB0C48F",
+   "id": "22400F778CBD6F955967C14EFBB0C48F",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/22400F778CBD6F955967C14EFBB0C48F"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/CBCB7B0423A03321B414AF4D63AA6C2E",
+   "id": "CBCB7B0423A03321B414AF4D63AA6C2E",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/CBCB7B0423A03321B414AF4D63AA6C2E"
+} ]
+
+
+17:37:53.509 [main] DEBUG c.i.k.driver.chrome_1698581271140 - root frame id: CBCB7B0423A03321B414AF4D63AA6C2E
+17:37:55.106 [chrome_1698581271140-out] DEBUG c.i.k.driver.chrome_1698581271140 - [12780:21540:1029/173755.106:ERROR:devtools_http_handler.cc(770)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+17:37:55.131 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+17:37:55.132 [main] ERROR c.i.k.driver.chrome_1698581271140 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+17:37:55.135 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+17:37:55.137 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'https://google.com'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+17:37:56.707 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+17:38:20.289 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+17:38:20.584 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:38:20.586 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698581300585
+17:38:20.612 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+17:38:21.485 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:38:21.577 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+17:38:21.578 [chrome_1698581301576] DEBUG c.i.k.driver.chrome_1698581301576 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1698581301576, --disable-popup-blocking], working dir: target\chrome_1698581301576
+17:38:21.585 [main] DEBUG c.i.k.driver.chrome_1698581301576 - poll attempt #0 for port to be ready - localhost:9222
+17:38:21.791 [chrome_1698581301576-out] DEBUG c.i.k.driver.chrome_1698581301576 - 
+17:38:21.791 [chrome_1698581301576-out] DEBUG c.i.k.driver.chrome_1698581301576 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/b94b4657-fa5f-4bc8-8441-5e0b1de3efd2
+17:38:22.974 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:38:23.019 [main] DEBUG com.intuit.karate - response time in milliseconds: 44
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/AD983A84D3DB556624AC430F2DCEDB43",
+   "id": "AD983A84D3DB556624AC430F2DCEDB43",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/AD983A84D3DB556624AC430F2DCEDB43"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/F7540ED03EF6F1BB04A1361B11E41F3A",
+   "id": "F7540ED03EF6F1BB04A1361B11E41F3A",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/F7540ED03EF6F1BB04A1361B11E41F3A"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/AAEAE0CFE68D776D72F1D1C9420DF6CF",
+   "id": "AAEAE0CFE68D776D72F1D1C9420DF6CF",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/AAEAE0CFE68D776D72F1D1C9420DF6CF"
+} ]
+
+
+17:38:23.024 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 895 ms - http://localhost:9222/json
+17:38:23.025 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:38:23.027 [main] DEBUG com.intuit.karate - response time in milliseconds: 0
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/AD983A84D3DB556624AC430F2DCEDB43",
+   "id": "AD983A84D3DB556624AC430F2DCEDB43",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/AD983A84D3DB556624AC430F2DCEDB43"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/F7540ED03EF6F1BB04A1361B11E41F3A",
+   "id": "F7540ED03EF6F1BB04A1361B11E41F3A",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/F7540ED03EF6F1BB04A1361B11E41F3A"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/AAEAE0CFE68D776D72F1D1C9420DF6CF",
+   "id": "AAEAE0CFE68D776D72F1D1C9420DF6CF",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/AAEAE0CFE68D776D72F1D1C9420DF6CF"
+} ]
+
+
+17:38:23.030 [main] DEBUG c.i.k.driver.chrome_1698581301576 - root frame id: AAEAE0CFE68D776D72F1D1C9420DF6CF
+17:38:23.816 [chrome_1698581301576-out] DEBUG c.i.k.driver.chrome_1698581301576 - [1108:20968:1029/173823.816:ERROR:devtools_http_handler.cc(770)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+17:38:23.830 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+17:38:23.830 [main] ERROR c.i.k.driver.chrome_1698581301576 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+17:38:23.832 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+17:38:23.833 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'http://google.com'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+17:38:24.710 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+18:13:58.005 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:13:58.274 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:13:58.277 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698583438276
+18:13:58.309 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+18:13:59.168 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:13:59.256 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+18:13:59.258 [chrome_1698583439254] DEBUG c.i.k.driver.chrome_1698583439254 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1698583439254, --disable-popup-blocking], working dir: target\chrome_1698583439254
+18:13:59.264 [main] DEBUG c.i.k.driver.chrome_1698583439254 - poll attempt #0 for port to be ready - localhost:9222
+18:13:59.469 [chrome_1698583439254-out] DEBUG c.i.k.driver.chrome_1698583439254 - 
+18:13:59.470 [chrome_1698583439254-out] DEBUG c.i.k.driver.chrome_1698583439254 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/893ebf2c-a6bc-432f-938e-b4ad16cce61b
+18:14:00.751 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:14:00.796 [main] DEBUG com.intuit.karate - response time in milliseconds: 41
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/05DC6E20E3091FADC6D869D4F4377E2F",
+   "id": "05DC6E20E3091FADC6D869D4F4377E2F",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/05DC6E20E3091FADC6D869D4F4377E2F"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/1DC4020F7BB09FADA925E097E8F696D9",
+   "id": "1DC4020F7BB09FADA925E097E8F696D9",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/1DC4020F7BB09FADA925E097E8F696D9"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/EC914392DF1BA0BD506E86E921F7576B",
+   "id": "EC914392DF1BA0BD506E86E921F7576B",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/EC914392DF1BA0BD506E86E921F7576B"
+} ]
+
+
+18:14:00.806 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 1019 ms - http://localhost:9222/json
+18:14:00.807 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:14:00.809 [main] DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/05DC6E20E3091FADC6D869D4F4377E2F",
+   "id": "05DC6E20E3091FADC6D869D4F4377E2F",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/05DC6E20E3091FADC6D869D4F4377E2F"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/1DC4020F7BB09FADA925E097E8F696D9",
+   "id": "1DC4020F7BB09FADA925E097E8F696D9",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/1DC4020F7BB09FADA925E097E8F696D9"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/EC914392DF1BA0BD506E86E921F7576B",
+   "id": "EC914392DF1BA0BD506E86E921F7576B",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/EC914392DF1BA0BD506E86E921F7576B"
+} ]
+
+
+18:14:00.814 [main] DEBUG c.i.k.driver.chrome_1698583439254 - root frame id: EC914392DF1BA0BD506E86E921F7576B
+18:14:02.566 [chrome_1698583439254-out] DEBUG c.i.k.driver.chrome_1698583439254 - [21052:1496:1029/181402.565:ERROR:devtools_http_handler.cc(770)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+18:14:02.589 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+18:14:02.590 [main] ERROR c.i.k.driver.chrome_1698583439254 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+18:14:02.595 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+18:14:02.597 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'http://google.com'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+18:14:04.389 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+18:20:28.088 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+18:20:28.350 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:20:28.353 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698583828351
+18:20:28.381 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+18:20:29.165 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:20:29.243 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+18:20:29.244 [chrome_1698583829241] DEBUG c.i.k.driver.chrome_1698583829241 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chrome_1698583829241, --disable-popup-blocking], working dir: target\chrome_1698583829241
+18:20:29.252 [main] DEBUG c.i.k.driver.chrome_1698583829241 - poll attempt #0 for port to be ready - localhost:9222
+18:20:29.449 [chrome_1698583829241-out] DEBUG c.i.k.driver.chrome_1698583829241 - 
+18:20:29.450 [chrome_1698583829241-out] DEBUG c.i.k.driver.chrome_1698583829241 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/2cd48f8b-e314-407e-aa71-fc28baf6c6db
+18:20:30.520 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:20:30.553 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/2AF1BFE49011AA13F184FA0E85EF0B12",
+   "id": "2AF1BFE49011AA13F184FA0E85EF0B12",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/2AF1BFE49011AA13F184FA0E85EF0B12"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/A9AA9775D095DEB133CEAC4DDB80B94D",
+   "id": "A9AA9775D095DEB133CEAC4DDB80B94D",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/A9AA9775D095DEB133CEAC4DDB80B94D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/725AB0B5D3FDC5E5026ADF143F98B489",
+   "id": "725AB0B5D3FDC5E5026ADF143F98B489",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/725AB0B5D3FDC5E5026ADF143F98B489"
+} ]
+
+
+18:20:30.565 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 783 ms - http://localhost:9222/json
+18:20:30.566 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:20:30.568 [main] DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Security-Policy: frame-ancestors 'none'
+1 < Content-Length: 1278
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/2AF1BFE49011AA13F184FA0E85EF0B12",
+   "id": "2AF1BFE49011AA13F184FA0E85EF0B12",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/2AF1BFE49011AA13F184FA0E85EF0B12"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/A9AA9775D095DEB133CEAC4DDB80B94D",
+   "id": "A9AA9775D095DEB133CEAC4DDB80B94D",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/A9AA9775D095DEB133CEAC4DDB80B94D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/725AB0B5D3FDC5E5026ADF143F98B489",
+   "id": "725AB0B5D3FDC5E5026ADF143F98B489",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/725AB0B5D3FDC5E5026ADF143F98B489"
+} ]
+
+
+18:20:30.572 [main] DEBUG c.i.k.driver.chrome_1698583829241 - root frame id: 725AB0B5D3FDC5E5026ADF143F98B489
+18:20:31.444 [chrome_1698583829241-out] DEBUG c.i.k.driver.chrome_1698583829241 - [20364:2172:1029/182031.444:ERROR:devtools_http_handler.cc(770)] Rejected an incoming WebSocket connection from the http://localhost:9222 origin. Use the command line flag --remote-allow-origins=http://localhost:9222 to allow connections from this origin or --remote-allow-origins=* to allow all origins.
+18:20:31.460 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connect failed: Invalid handshake response getStatus: 403 Forbidden
+18:20:31.460 [main] ERROR c.i.k.driver.chrome_1698583829241 - websocket client init failed: Invalid handshake response getStatus: 403 Forbidden
+18:20:31.463 [main] ERROR com.intuit.karate - driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+java.lang.RuntimeException: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at com.intuit.karate.http.WebSocketClient.<init>(WebSocketClient.java:148)
+	at com.intuit.karate.driver.DevToolsDriver.<init>(DevToolsDriver.java:126)
+	at com.intuit.karate.driver.chrome.Chrome.<init>(Chrome.java:59)
+	at com.intuit.karate.driver.chrome.Chrome.start(Chrome.java:106)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13.verify(WebSocketClientHandshaker13.java:272)
+	at io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker.finishHandshake(WebSocketClientHandshaker.java:304)
+	at com.intuit.karate.http.WebSocketClientHandler.channelRead0(WebSocketClientHandler.java:85)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.extensions.WebSocketClientExtensionHandler.channelRead(WebSocketClientExtensionHandler.java:125)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+18:20:31.464 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'https://enps.nsdl.com/eNPS/OnlineSubscriberRegistration.html?appType=main'
+driver config / start failed: io.netty.handler.codec.http.websocketx.WebSocketClientHandshakeException: Invalid handshake response getStatus: 403 Forbidden, options: {type=chrome, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+18:20:32.298 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+19:22:38.430 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:22:38.681 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:22:38.682 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698587558681
+19:22:38.708 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+19:22:39.515 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:22:39.578 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9515
+19:22:39.579 [chromedriver_1698587559577] DEBUG c.i.k.d.chromedriver_1698587559577 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --port=9515, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chromedriver_1698587559577], working dir: target\chromedriver_1698587559577
+19:22:39.585 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #0 for port to be ready - localhost:9515
+19:22:41.889 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #1 for port to be ready - localhost:9515
+19:22:44.187 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #2 for port to be ready - localhost:9515
+19:22:46.493 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #3 for port to be ready - localhost:9515
+19:22:48.805 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #4 for port to be ready - localhost:9515
+19:22:51.105 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #5 for port to be ready - localhost:9515
+19:22:53.413 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #6 for port to be ready - localhost:9515
+19:22:55.726 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #7 for port to be ready - localhost:9515
+19:22:58.036 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #8 for port to be ready - localhost:9515
+19:23:00.349 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #9 for port to be ready - localhost:9515
+19:23:02.657 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #10 for port to be ready - localhost:9515
+19:23:04.967 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #11 for port to be ready - localhost:9515
+19:23:07.265 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #12 for port to be ready - localhost:9515
+19:23:09.568 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #13 for port to be ready - localhost:9515
+19:23:11.878 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #14 for port to be ready - localhost:9515
+19:23:14.184 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #15 for port to be ready - localhost:9515
+19:23:16.471 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #16 for port to be ready - localhost:9515
+19:23:17.705 [chromedriver_1698587559577] DEBUG com.intuit.karate.shell.Command - command complete, exit code: 0 - [C:/Program Files/Google/Chrome/Application/chrome.exe, --port=9515, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chromedriver_1698587559577]
+19:23:18.781 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #17 for port to be ready - localhost:9515
+19:23:21.096 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #18 for port to be ready - localhost:9515
+19:23:23.409 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #19 for port to be ready - localhost:9515
+19:23:25.714 [main] DEBUG c.i.k.d.chromedriver_1698587559577 - poll attempt #20 for port to be ready - localhost:9515
+19:23:29.088 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9515/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:9515
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+19:23:33.194 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9515 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 5082 milliseconds for url: http://localhost:9515/session
+19:23:33.200 [main] ERROR com.intuit.karate - driver config / start failed: http call failed after 5082 milliseconds for url: http://localhost:9515/session, options: {type=chromedriver, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+com.intuit.karate.KarateException: http call failed after 5082 milliseconds for url: http://localhost:9515/session
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:599)
+	at com.intuit.karate.core.ScenarioEngine.httpInvoke(ScenarioEngine.java:558)
+	at com.intuit.karate.Http.method(Http.java:83)
+	at com.intuit.karate.Http.post(Http.java:108)
+	at com.intuit.karate.driver.WebDriver.<init>(WebDriver.java:60)
+	at com.intuit.karate.driver.chrome.ChromeWebDriver.<init>(ChromeWebDriver.java:42)
+	at com.intuit.karate.driver.chrome.ChromeWebDriver.start(ChromeWebDriver.java:51)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:9515 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:286)
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:589)
+	... 35 common frames omitted
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:9515 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:273)
+	... 36 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 45 common frames omitted
+19:23:33.201 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'https://www.techlistic.com/p/selenium-practice-form.html'
+driver config / start failed: http call failed after 5082 milliseconds for url: http://localhost:9515/session, options: {type=chromedriver, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+19:23:33.205 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+19:23:33.215 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:33.217 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 61276
+19:23:33.218 [main] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9515 not available, will use: 61276
+19:23:33.219 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #0 for port to be ready - localhost:61276
+19:23:33.219 [chromedriver_1698587613217] DEBUG c.i.k.d.chromedriver_1698587613217 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --port=61276, --user-data-dir=C:\Users\Vikas_Nallabelli\IdeaProjects\KarateEPAMTrainings\target\chromedriver_1698587613217], working dir: target\chromedriver_1698587613217
+19:23:35.521 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #1 for port to be ready - localhost:61276
+19:23:37.810 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #2 for port to be ready - localhost:61276
+19:23:40.126 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #3 for port to be ready - localhost:61276
+19:23:42.436 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #4 for port to be ready - localhost:61276
+19:23:44.748 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #5 for port to be ready - localhost:61276
+19:23:47.061 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #6 for port to be ready - localhost:61276
+19:23:49.370 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #7 for port to be ready - localhost:61276
+19:23:51.679 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #8 for port to be ready - localhost:61276
+19:23:53.985 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #9 for port to be ready - localhost:61276
+19:23:56.284 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #10 for port to be ready - localhost:61276
+19:23:58.582 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #11 for port to be ready - localhost:61276
+19:24:00.886 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #12 for port to be ready - localhost:61276
+19:24:03.202 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #13 for port to be ready - localhost:61276
+19:24:05.511 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #14 for port to be ready - localhost:61276
+19:24:07.812 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #15 for port to be ready - localhost:61276
+19:24:10.117 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #16 for port to be ready - localhost:61276
+19:24:12.424 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #17 for port to be ready - localhost:61276
+19:24:14.725 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #18 for port to be ready - localhost:61276
+19:24:17.036 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #19 for port to be ready - localhost:61276
+19:24:19.353 [main] DEBUG c.i.k.d.chromedriver_1698587613217 - poll attempt #20 for port to be ready - localhost:61276
+19:24:21.668 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:61276/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:61276
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+19:24:25.757 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:61276 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4091 milliseconds for url: http://localhost:61276/session
+19:24:25.757 [main] ERROR com.intuit.karate - driver config / start failed: http call failed after 4091 milliseconds for url: http://localhost:61276/session, options: {type=chromedriver, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+com.intuit.karate.KarateException: http call failed after 4091 milliseconds for url: http://localhost:61276/session
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:599)
+	at com.intuit.karate.core.ScenarioEngine.httpInvoke(ScenarioEngine.java:558)
+	at com.intuit.karate.Http.method(Http.java:83)
+	at com.intuit.karate.Http.post(Http.java:108)
+	at com.intuit.karate.driver.WebDriver.<init>(WebDriver.java:60)
+	at com.intuit.karate.driver.chrome.ChromeWebDriver.<init>(ChromeWebDriver.java:42)
+	at com.intuit.karate.driver.chrome.ChromeWebDriver.start(ChromeWebDriver.java:51)
+	at com.intuit.karate.driver.DriverOptions.start(DriverOptions.java:316)
+	at com.intuit.karate.core.ScenarioEngine.driver(ScenarioEngine.java:865)
+	at com.intuit.karate.ScenarioActions.driver(ScenarioActions.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intuit.karate.core.StepRuntime.execute(StepRuntime.java:296)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:497)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:440)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:182)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.Main.call(Main.java:345)
+	at com.intuit.karate.Main.call(Main.java:56)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at com.intuit.karate.Main.main(Main.java:299)
+Caused by: java.lang.RuntimeException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:61276 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:286)
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:589)
+	... 35 common frames omitted
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:61276 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:273)
+	... 36 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 45 common frames omitted
+19:24:25.758 [main] ERROR com.intuit.karate - src/test/java/examples/users/NPS.feature:7
+Given driver 'https://www.techlistic.com/p/selenium-practice-form.html'
+driver config / start failed: http call failed after 4091 milliseconds for url: http://localhost:61276/session, options: {type=chromedriver, executable=C:/Program Files/Google/Chrome/Application/chrome.exe, target=null}
+src/test/java/examples/users/NPS.feature:7
+19:24:26.387 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/NPS.feature
+19:17:46.085 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:17:46.444 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:17:46.447 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673666446
+19:17:46.490 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:17:47.516 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:17:47.566 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* url = "https://reqres.in/"
+js failed:
+>>>>
+01: = "https://reqres.in/"
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+= "https://reqres.in/"
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+src/test/java/examples/users/APITask.feature:5
+19:17:48.409 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:18:33.675 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:18:33.972 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:18:33.974 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673713973
+19:18:34.001 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:18:34.857 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:18:34.893 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* def url = "https://reqres.in/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+src/test/java/examples/users/APITask.feature:5
+19:18:35.569 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:18:58.390 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:18:58.674 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:18:58.675 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673738675
+19:18:58.703 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:18:59.507 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:19:00.235 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:19:00.670 [main] DEBUG com.intuit.karate - response time in milliseconds: 432
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:50:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 158
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e42018cfbd2e99-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:19:01.230 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:21:52.040 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:21:52.310 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:21:52.311 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673912311
+19:21:52.341 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:21:53.135 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:21:53.169 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* def url = "https://reqres.in/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+src/test/java/examples/users/APITask.feature:5
+19:21:53.880 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:22:03.061 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:22:03.339 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:22:03.341 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673923340
+19:22:03.367 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:22:04.180 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:22:04.213 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* def url = "https://reqres.in/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+src/test/java/examples/users/APITask.feature:5
+19:22:04.909 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:22:16.545 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:22:16.818 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:22:16.820 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673936819
+19:22:16.848 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:22:17.754 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:22:17.806 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* url = "https://reqres.in/"
+js failed:
+>>>>
+01: = "https://reqres.in/"
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+= "https://reqres.in/"
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+src/test/java/examples/users/APITask.feature:5
+19:22:18.570 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:22:31.050 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:22:31.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:22:31.344 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698673951343
+19:22:31.375 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:22:32.239 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:22:32.281 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* url = "https://reqres.in/"
+js failed:
+>>>>
+01: = "https://reqres.in/"
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+= "https://reqres.in/"
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+src/test/java/examples/users/APITask.feature:5
+19:22:32.964 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:23:27.216 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:23:27.507 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:23:27.509 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674007508
+19:23:27.534 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:23:28.431 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:28.466 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:5
+* def url = "https://reqres.in/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+src/test/java/examples/users/APITask.feature:5
+19:23:29.190 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:23:40.177 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:23:40.455 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:23:40.457 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674020456
+19:23:40.479 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:23:41.306 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:41.979 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:23:42.363 [main] DEBUG com.intuit.karate - response time in milliseconds: 381
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:54:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 439
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e426f8db4f2e90-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:23:42.392 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:11
+Then response contains
+"""
+{
+        "id": 11,
+        "email": "george.edwards@reqres.in",
+        "first_name": "George",
+        "last_name": "Edwards",
+        "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    }
+"""
+no step-definition method match found for: response contains
+src/test/java/examples/users/APITask.feature:11
+19:23:42.927 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:24:20.248 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:24:20.541 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:24:20.542 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674060542
+19:24:20.570 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:24:21.383 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:22.101 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:24:22.534 [main] DEBUG com.intuit.karate - response time in milliseconds: 429
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:55:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 480
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e427f47f472e91-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:24:22.568 [main] INFO  com.intuit.karate - [print] {
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+    {
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+19:24:23.076 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:25:02.837 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:25:03.113 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:25:03.114 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674103114
+19:25:03.140 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:25:03.987 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:25:04.663 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:25:04.975 [main] DEBUG com.intuit.karate - response time in milliseconds: 310
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:56:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 522
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e428fd39772e9f-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:25:05.004 [main] INFO  com.intuit.karate - [print] {
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+    {
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+19:25:05.006 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:12
+Then response contains =
+no step-definition method match found for: response contains =
+src/test/java/examples/users/APITask.feature:12
+19:25:05.527 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:25:17.153 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:25:17.418 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:25:17.419 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674117419
+19:25:17.444 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:25:18.274 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:25:18.967 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:25:19.263 [main] DEBUG com.intuit.karate - response time in milliseconds: 294
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:56:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 536
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e429568ebe2e9c-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:25:19.303 [main] INFO  com.intuit.karate - [print] {
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+    {
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+19:25:19.305 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:12
+Then response contains ==
+"""
+{
+        "id": 11,
+        "email": "george.edwards@reqres.in",
+        "first_name": "George",
+        "last_name": "Edwards",
+        "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    }
+"""
+no step-definition method match found for: response contains ==
+src/test/java/examples/users/APITask.feature:12
+19:25:19.821 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:26:00.130 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:26:00.436 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:26:00.437 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674160436
+19:26:00.463 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:26:01.329 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:26:01.980 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:26:02.282 [main] DEBUG com.intuit.karate - response time in milliseconds: 299
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:57:07 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 579
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e42a63ed3b2e97-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:26:02.317 [main] INFO  com.intuit.karate - [print] {
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+    {
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+19:26:02.332 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:22
+Then response contains resp
+no step-definition method match found for: response contains resp
+src/test/java/examples/users/APITask.feature:22
+19:26:02.847 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+19:27:41.125 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+19:27:41.555 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:27:41.557 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698674261556
+19:27:41.592 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+19:27:42.795 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:27:43.628 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:27:43.975 [main] DEBUG com.intuit.karate - response time in milliseconds: 344
+1 < 200
+1 < Date: Mon, 30 Oct 2023 13:58:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 681
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e42cdf5bff2e91-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:27:44.018 [main] INFO  com.intuit.karate - [print] {
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+    {
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+19:27:44.021 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:12
+* resp
+"""
+{
+        "id": 11,
+        "email": "george.edwards@reqres.in",
+        "first_name": "George",
+        "last_name": "Edwards",
+        "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    }
+"""
+no step-definition method match found for: resp
+src/test/java/examples/users/APITask.feature:12
+19:27:44.696 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:51:21.058 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:51:21.326 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:51:21.329 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679281327
+20:51:21.358 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 8
+20:51:22.216 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:51:22.273 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:6
+* def responsePayload = read('classpath: src/test/java/examples/users/response/response.json')
+js failed:
+>>>>
+01: read('classpath: src/test/java/examples/users/response/response.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found:  src/test/java/examples/users/response/response.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/APITask.feature:6
+20:51:22.988 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:51:46.516 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:51:46.799 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:51:46.800 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679306799
+20:51:46.822 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 8
+20:51:47.639 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:51:47.696 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:6
+* def responsePayload = read('classpath:src/test/java/examples/users/response/response.json')
+js failed:
+>>>>
+01: read('classpath:src/test/java/examples/users/response/response.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: src/test/java/examples/users/response/response.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/APITask.feature:6
+20:51:48.404 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:52:52.763 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:52:53.033 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:52:53.035 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679373034
+20:52:53.065 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 8
+20:52:53.876 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:52:53.929 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:6
+* def responsePayload = read('classpath:src/test/java/examples/users/response/response.json')
+js failed:
+>>>>
+01: read('classpath:src/test/java/examples/users/response/response.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: src/test/java/examples/users/response/response.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/APITask.feature:6
+20:52:54.683 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:55:53.064 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:55:53.363 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:55:53.365 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679553364
+20:55:53.393 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+20:55:54.272 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:55:54.327 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:6
+* def responsePayload = read('classpath:src/test/java/examples/users/response/response.json')
+js failed:
+>>>>
+01: read('classpath:src/test/java/examples/users/response/response.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: src/test/java/examples/users/response/response.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/APITask.feature:6
+20:55:55.023 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:56:07.508 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:56:07.787 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:56:07.789 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679567788
+20:56:07.814 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+20:56:08.606 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:56:08.649 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:16
+And request =
+"""
+{
+"name": "morpheus",
+"job": "leader"
+}
+"""
+no step-definition method match found for: request =
+src/test/java/examples/users/APITask.feature:16
+20:56:09.310 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:58:00.280 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:58:00.580 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:58:00.581 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679680581
+20:58:00.608 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+20:58:01.439 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:58:01.479 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:16
+And request =
+"""
+{
+"name": "morpheus",
+"job": "leader"
+}
+"""
+no step-definition method match found for: request =
+src/test/java/examples/users/APITask.feature:16
+20:58:02.143 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+20:58:46.879 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+20:58:47.163 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:58:47.165 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679727164
+20:58:47.193 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+20:58:48.104 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:58:48.151 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:16
+And request =
+"""
+{
+"name": "morpheus",
+"job": "leader"
+}
+"""
+no step-definition method match found for: request =
+src/test/java/examples/users/APITask.feature:16
+20:58:48.957 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:02:50.626 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:02:50.920 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:02:50.921 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698679970921
+21:02:50.951 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 35
+21:02:51.853 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:02:51.896 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:37
+* def requestBody=
+"""
+{
+"name": "morpheus",
+"job": "zion resident"
+}
+"""
+no step-definition method match found for: def requestBody=
+src/test/java/examples/users/APITask.feature:37
+21:02:52.598 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:03:27.102 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:03:27.380 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:03:27.382 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680007381
+21:03:27.402 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 35
+21:03:28.224 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:03:28.264 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:37
+* requestBody=
+"""
+{
+"name": "morpheus",
+"job": "zion resident"
+}
+"""
+no step-definition method match found for: requestBody=
+src/test/java/examples/users/APITask.feature:37
+21:03:28.929 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:04:44.676 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:04:44.953 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:04:44.954 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680084953
+21:04:44.987 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 35
+21:04:45.796 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:04:45.894 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:44
+And request requestBody
+js failed:
+>>>>
+01: requestBody
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "requestBody" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/users/APITask.feature:44
+21:04:46.565 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:05:06.049 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:05:06.363 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:05:06.364 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680106363
+21:05:06.388 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 35
+21:05:07.387 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:05:08.248 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in//api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+21:05:09.033 [main] DEBUG com.intuit.karate - response time in milliseconds: 783
+1 < 200
+1 < Date: Mon, 30 Oct 2023 15:36:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680174&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=87EpC4NonRM8Q06UtsEE6g9jEgIzJWeEzo2Q6FTuxCo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680174&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=87EpC4NonRM8Q06UtsEE6g9jEgIzJWeEzo2Q6FTuxCo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-9hMC3aibwqQbFTY+/vbHfCAFfvg"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e4bb9068f02e84-HYD
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-10-30T15:36:14.381Z"}
+
+21:05:09.623 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:05:45.344 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:05:45.620 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/examples/users/APITask.feature - mismatched input 'T' expecting <EOF>
+21:06:12.405 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:06:12.656 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/examples/users/APITask.feature - mismatched input 'T' expecting <EOF>
+21:06:44.677 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:06:44.944 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/examples/users/APITask.feature - mismatched input 'T' expecting <EOF>
+21:07:06.140 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:07:06.356 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/examples/users/APITask.feature - mismatched input 'T' expecting <EOF>
+21:07:57.025 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:07:57.297 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:07:57.298 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680277298
+21:07:57.325 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+21:07:58.212 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:07:58.978 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in//api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+21:07:59.549 [main] DEBUG com.intuit.karate - response time in milliseconds: 570
+1 < 201
+1 < Date: Mon, 30 Oct 2023 15:39:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680344&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=H96uQrP762L7epYoiRn8M9DFMva4aILN6hk%2Bd0NSxJE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680344&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=H96uQrP762L7epYoiRn8M9DFMva4aILN6hk%2Bd0NSxJE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-vOHWOieZ53rTFa82lHSDGtPRsu4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4bfba5ae62e84-HYD
+{"name":"morpheus","job":"leader","id":"967","createdAt":"2023-10-30T15:39:04.923Z"}
+
+21:07:59.562 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:25
+Then match response ==
+"""
+{
+"name": "morpheus",
+"job": "leader",
+"id": "670",
+"createdAt": "2023-10-30T15:25:29.267Z"
+}
+"""
+match failed: EQUALS
+  $ | not equal | match failed for name: 'id' (MAP:MAP)
+  {"name":"morpheus","job":"leader","id":"967","createdAt":"2023-10-30T15:39:04.923Z"}
+  {"name":"morpheus","job":"leader","id":"670","createdAt":"2023-10-30T15:25:29.267Z"}
+
+    $.id | not equal (STRING:STRING)
+    '967'
+    '670'
+
+src/test/java/examples/users/APITask.feature:25
+21:08:00.053 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:08:54.908 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:08:55.212 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:08:55.215 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680335214
+21:08:55.243 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+21:08:56.064 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:08:56.827 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in//api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+21:08:57.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 775
+1 < 201
+1 < Date: Mon, 30 Oct 2023 15:40:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680402&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2F3fxLipFrTcPI99ovxz0atPRcbOgxykIL08Gfb40E5s%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680402&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2F3fxLipFrTcPI99ovxz0atPRcbOgxykIL08Gfb40E5s%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-aDurTFwyuUwEuCNgNnRDhVYAxgY"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c1246e552e85-HYD
+{"name":"morpheus","job":"leader","id":"933","createdAt":"2023-10-30T15:40:02.863Z"}
+
+21:08:57.631 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:25
+Then match response ==
+"""
+{
+"name": "morpheus",
+"job": "leader",
+"id": "#(string))",
+"createdAt": "#(string)"
+}
+"""
+SyntaxError: Unnamed:1:6 Expected ; but found )
+string)
+      ^
+
+src/test/java/examples/users/APITask.feature:25
+21:08:58.117 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:09:23.219 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:09:23.512 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:09:23.513 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680363512
+21:09:23.537 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+21:09:24.371 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:09:25.151 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in//api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+21:09:25.974 [main] DEBUG com.intuit.karate - response time in milliseconds: 820
+1 < 201
+1 < Date: Mon, 30 Oct 2023 15:40:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680431&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=pOPHVm78FyFK6jvA%2F%2Bo%2BGX8o%2B4ji3IP3UgurifoOTB8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680431&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=pOPHVm78FyFK6jvA%2F%2Bo%2BGX8o%2B4ji3IP3UgurifoOTB8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-0z+q7ASgo3OwlzotWV7rCOoTOCU"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c1d5ac4f2e8b-HYD
+{"name":"morpheus","job":"leader","id":"402","createdAt":"2023-10-30T15:40:31.233Z"}
+
+21:09:25.997 [main] ERROR com.intuit.karate - src/test/java/examples/users/APITask.feature:25
+Then match response ==
+"""
+{
+"name": "morpheus",
+"job": "leader",
+"id": "#(string)",
+"createdAt": "#(string)"
+}
+"""
+ReferenceError: "string" is not defined
+src/test/java/examples/users/APITask.feature:25
+21:09:26.585 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:10:49.396 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:10:49.690 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:10:49.691 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680449691
+21:10:49.720 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+21:10:50.636 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:10:51.590 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in//api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+21:10:52.281 [main] DEBUG com.intuit.karate - response time in milliseconds: 689
+1 < 201
+1 < Date: Mon, 30 Oct 2023 15:41:57 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680517&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=IaygrZ%2FyZkgkvbFV%2BGwVjiWFzugR37lBDU9Rs9kmfGE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680517&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=IaygrZ%2FyZkgkvbFV%2BGwVjiWFzugR37lBDU9Rs9kmfGE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-4WsnPJpMrbjKReQvdIcy0xOOh0g"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c3f189e22e9f-HYD
+{"name":"morpheus","job":"leader","id":"486","createdAt":"2023-10-30T15:41:57.604Z"}
+
+21:10:52.904 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:12:05.736 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:12:06.014 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:12:06.015 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680526014
+21:12:06.043 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 33
+21:12:06.892 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:12:07.648 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in//api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+21:12:08.275 [main] DEBUG com.intuit.karate - response time in milliseconds: 623
+1 < 200
+1 < Date: Mon, 30 Oct 2023 15:43:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680593&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=mTcweJ2QtPcumVTxpD7%2B%2BuQj9%2Bdmnk%2FKbLbTw92kjS8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680593&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=mTcweJ2QtPcumVTxpD7%2B%2BuQj9%2Bdmnk%2FKbLbTw92kjS8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-H82ECNVbJRtnRTFp+j1+Q1SIMjA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c5cc8a642e97-HYD
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-10-30T15:43:13.616Z"}
+
+21:12:08.827 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:12:19.352 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:12:19.625 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:12:19.626 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680539626
+21:12:19.649 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+21:12:20.502 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:12:21.206 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:12:21.494 [main] DEBUG com.intuit.karate - response time in milliseconds: 287
+1 < 200
+1 < Date: Mon, 30 Oct 2023 15:43:26 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 6958
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c6217ec22e9f-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+21:12:22.032 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:13:40.742 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:13:41.044 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:13:41.046 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680621045
+21:13:41.079 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 52
+21:13:41.985 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:13:42.686 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in//api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:13:43.510 [main] DEBUG com.intuit.karate - response time in milliseconds: 821
+1 < 204
+1 < Date: Mon, 30 Oct 2023 15:44:48 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680688&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=p1uM%2BxiBeY%2FTXyT3MY%2BkXR%2BgjPZTQOUUoeJpDRSNmz4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680688&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=p1uM%2BxiBeY%2FTXyT3MY%2BkXR%2BgjPZTQOUUoeJpDRSNmz4%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c81efe3d2e91-HYD
+
+
+21:13:44.087 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
+21:13:53.678 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+21:13:53.994 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:13:53.995 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1698680633995
+21:13:54.906 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:13:55.606 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in//api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:13:55.955 [main] DEBUG com.intuit.karate - response time in milliseconds: 346
+1 < 200
+1 < Date: Mon, 30 Oct 2023 15:45:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698616835&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=hWyNDARdtXRRZ2mQkSrEShWn7eAIj7AAVP0P8VKUJvk%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 7053
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c86f4b572e99-HYD
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+21:13:55.988 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:13:56.051 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in//api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+21:13:56.496 [main] DEBUG com.intuit.karate - response time in milliseconds: 444
+1 < 201
+1 < Date: Mon, 30 Oct 2023 15:45:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680701&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=TR%2BgzPc6r7Ztw5F%2BzbSU62FL%2Fh%2BbiMwfgWm725we47g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680701&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=TR%2BgzPc6r7Ztw5F%2BzbSU62FL%2Fh%2BbiMwfgWm725we47g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-EKTNTmJ3UmJvJbBQyqi7/3ZXitk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c870a8f72e87-HYD
+{"name":"morpheus","job":"leader","id":"396","createdAt":"2023-10-30T15:45:01.797Z"}
+
+21:13:56.521 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:13:56.525 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in//api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+21:13:56.903 [main] DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 200
+1 < Date: Mon, 30 Oct 2023 15:45:02 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680702&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=ymS04e5fCoVZ7RR0rud1IxSn2QZXzAKDNtbP5yc51xU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680702&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=ymS04e5fCoVZ7RR0rud1IxSn2QZXzAKDNtbP5yc51xU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-lWN33CHivl8U8BGf/aqOt+b7mWA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c873ae2c2e96-HYD
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-10-30T15:45:02.256Z"}
+
+21:13:56.908 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:13:56.911 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in//api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_311)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:13:57.316 [main] DEBUG com.intuit.karate - response time in milliseconds: 405
+1 < 204
+1 < Date: Mon, 30 Oct 2023 15:45:02 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698680702&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=ymS04e5fCoVZ7RR0rud1IxSn2QZXzAKDNtbP5yc51xU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698680702&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=ymS04e5fCoVZ7RR0rud1IxSn2QZXzAKDNtbP5yc51xU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 81e4c875f9d72e9f-HYD
+
+
+21:13:57.929 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/APITask.feature
